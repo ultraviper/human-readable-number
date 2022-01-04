@@ -6002,3 +6002,10 @@ it('Should return \'nine hundred ninety nine\' when 999 given', () => {
 
   assert.equal(readable, 'nine hundred ninety nine');
 });
+
+
+it('Should return \'eighty eight thousand nine hundred ninety nine\' when 88999 given', () => {
+  const readable = toReadable(88999);
+
+  assert.equal(readable, 'eighty eight thousand nine hundred ninety nine');
+});

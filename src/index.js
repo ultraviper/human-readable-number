@@ -39,7 +39,7 @@ module.exports = function toReadable(number) {
     
 
     
-    return splitedNum.map((partOfNumber,index) => (
+    return splitedNum.reverse().map((partOfNumber,index) => (
         less1000(partOfNumber) + ((index > 0) ? " "+ tensPower[index*3] : "")
-        )).join(" ")
+        )).reverse().join(" ")
 }
